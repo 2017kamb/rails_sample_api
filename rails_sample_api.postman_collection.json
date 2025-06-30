@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "85879f9f-f0be-4ab1-accf-04e8e991d123",
+		"name": "rails_sample_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23005801"
+	},
+	"item": [
+		{
+			"name": "index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"user\": { \"name\": \"Aarya\", \"email\": \"aarya@example.com\" } }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/users/1"
+			},
+			"response": []
+		}
+	]
+}
